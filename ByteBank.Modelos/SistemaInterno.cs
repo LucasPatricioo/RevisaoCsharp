@@ -8,9 +8,9 @@ namespace ByteBank.Modelos
 {
     class SistemaInterno
     {
-        public bool Autenticar(IAutenticavel usuario, string senha)
+        public bool Autenticar(IAutenticavel funcionario, string senha)
         {
-            bool usuarioAutenticado = usuario.Autenticar(senha);
+            bool usuarioAutenticado = funcionario.Autenticar(senha);
 
             if (usuarioAutenticado)
             {
